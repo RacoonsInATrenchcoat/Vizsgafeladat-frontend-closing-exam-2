@@ -26,10 +26,10 @@ const App = () => {
     }
 
     const filteredCats = allCats.filter(cat =>
-      cat.name.includes(searchQuery) ||
+      cat.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       cat.age.toString().includes(searchQuery) ||
-      cat.gender.includes(searchQuery) ||
-      cat.color.includes(searchQuery)
+      cat.gender.toLowerCase() === searchQuery.toLowerCase() || //orig: cat.gender.includes(searchQuery)
+      cat.color.toLowerCase().includes(searchQuery.toLowerCase()) //orig: cat.color.includes(searchQuery)
     );
 
     setCats(filteredCats);

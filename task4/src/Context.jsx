@@ -1,9 +1,7 @@
 import React, { createContext, useState, useContext } from "react";
 
-// Create Context
 const FilterContext = createContext();
 
-// Custom Hook to access context easily
 export const useFilter = () => {
   const context = useContext(FilterContext);
   if (!context) {
@@ -12,7 +10,6 @@ export const useFilter = () => {
   return context;
 };
 
-// Provider Component (wraps the entire app)
 export const FilterProvider = ({ children }) => {
   const [searchQuery, setSearchQuery] = useState("");
 
