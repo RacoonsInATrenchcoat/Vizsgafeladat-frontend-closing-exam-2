@@ -16,7 +16,7 @@
 
     For example:
         - If the user types "Male" than every male cats are being displayed in the table bellow.
-        -If the user types "7" than every 7 years old cats are being displayed in the table bellow.
+        - If the user types "7" than every 7 years old cats are being displayed in the table bellow.
         - If the user types "Toby" than only the cats with the name Toby are being displayed in the table bellow.
         - If the user types "Brown" than only the cats with the color Brown are being displayed in the table bellow.
 
